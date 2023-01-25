@@ -20,6 +20,6 @@ public class HelloControllerTest {
     public void indexTest() throws Exception {
         mockMvc.perform(get("/")).andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello, Birgir!")));
+                .andExpect(content().string(equalTo("Hello, Student!")));
     }
 }
